@@ -93,10 +93,10 @@ exec(`cd /sdcard/download && play *mp3`)
 			}
 			let buff = await getBuffer(ppimg)
 			masuk =`┌❏ _Welcome To Group_
-│◦➛  {mdata.subject}
-├◦⎘ _Username_ : @${num.split('@')[0]}
+│◦➛  ${mdata.subject}
+├◦⎘ _User_ : @${num.split('@')[0]}
 ├◦⎘ _Time_ : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}
-├◦©® : _wa.me/6282147244748_
+├◦©® : _Enjoy ☕_
 └❏`
 			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'Welcome New Member'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
