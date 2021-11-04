@@ -92,12 +92,12 @@ exec(`cd /sdcard/download && play *mp3`)
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			masuk =`Welcome To Group ${mdata.subject}\n\n*User* :@${num.split('@')[0]}\n*Time* :${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\n\n𝙷𝚘𝚙𝚎 𝚢𝚘𝚞 𝚕𝚒𝚔𝚎 𝚒𝚝\nKlik Button Di Bawah Untuk Memulai Bot\nNote Jika Tidak Ada Ketik .menu`
+			masuk =`Welcome To Group ${mdata.subject}\n\n*User* :@${num.split('@')[0]}\n*Time* :${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\n\n𝙷𝚘𝚙𝚎 𝚢𝚘𝚞 𝚕𝚒𝚔𝚎 𝚒𝚝 𝚊𝚗𝚍 𝚍𝚘𝚗'𝚝 𝚏𝚘𝚛𝚐𝚎𝚝 𝚝𝚘 𝚛𝚎𝚊𝚍 𝚝𝚑𝚎 𝚐𝚛𝚘𝚞𝚙 𝚍𝚎𝚜𝚌𝚛𝚒𝚙𝚝𝚒𝚘𝚗`
 			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'Welcome New Member'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,
-footerText: `© Azril`, 
+footerText: `ketik .menu untuk memulai bot`, 
 buttons: gbutsan,
 headerType: 4 }
 			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./denz.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
