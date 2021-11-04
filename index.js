@@ -92,12 +92,14 @@ exec(`cd /sdcard/download && play *mp3`)
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			masuk =`┌❏ _Welcome To Group_
+			masuk =`┌✧ :･ﾟ _Welcome To Group_ 
 │◦➛  ${mdata.subject}
-├◦⎘ _User_ : @${num.split('@')[0]}
+│       ─────────
+├◦⎙ _User_ : @${num.split('@')[0]}
 ├◦⎘ _Time_ : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}
-├◦©® : _Enjoy ☕_
-└❏`
+└────────────────﻿✦
+☏ Owner: http://wa.me/6282147244748
+    ╰┈➤ *minat sewa bot. cht no diatas*`
 			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'Welcome New Member'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
@@ -114,10 +116,8 @@ headerType: 4 }
 			try {
 			ppimg = await denz.getProfilePicture(`${num.split('@')[0]}@c.us`)
 			} catch {
-			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-			}
 			let buff = await getBuffer(ppimg)
-			keluar =`Selamat tinggal @${num.split('@')[0]}\nSemoga tentang disana`
+			keluar =`Selamat tinggal @${num.split('@')[0]}`
 			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Byee'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
