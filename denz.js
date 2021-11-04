@@ -1085,7 +1085,6 @@ fill =`╭─❒ 「 Bot Info 」 ❒
 ╭─❒ 「 User Info 」 ❒
 ├ _Status : ${isOwner ? 'Owner' : 'User'}_
 ├ _Nama : ${pushname}_
-├ _Bio : ${stst}_
 ├ _Nomor : @${stod.split('@')[0]}_
 └❏
 
@@ -1416,7 +1415,6 @@ else if(menusimpel = true){
 ╭─❒ 「 User Info 」 ❒
 ├ _Status : ${isOwner ? 'Owner' : 'User'}_
 ├ _Nama : ${pushname}_
-├ _Bio : ${stst}_
 ├ _Nomor : @${stod.split('@')[0]}_
 └❏
 
@@ -2057,7 +2055,7 @@ mhan = await denz.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
 const sendBtnVeryy = {
 imageMessage: mhan.message.imageMessage,
 contentText:`${jancok}`,
-footerText:'Terimakasih Sudah Mendaftar\n*_©Yuzzu Kamiyaka_*', 
+footerText:'Terimakasih Sudah Mendaftar\n*_©Azril Maulana_*', 
 buttons: gbutsan,
 headerType: 4
 }
