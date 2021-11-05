@@ -1077,344 +1077,16 @@ fill =`╭─❒ 「 Bot Info 」 ❒
 ├ _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
 ├ _Nama Bot : ${NamaBot}_
 ├ _Nama Owner : ${NamaOwner}_
-├ _Nomor Owner : @${otod.split('@')[0]}_
-├ _Auto Composing : ${settings.autocomposing}_
-├ _Auto Recording : ${settings.autorecording}_
 └❏
 
 ╭─❒ 「 User Info 」 ❒
 ├ _Status : ${isOwner ? 'Owner' : 'User'}_
 ├ _Nama : ${pushname}_
 ├ _Nomor : @${stod.split('@')[0]}_
-└❏
-
-┌❏ TO DAY
-│ ${tampilUcapan}
-├ Jam : ${jmn}
-├ Hari : ${week} ${weton}
-├ Tanggal : ${calender}
 └❏`
-menu =`┏┉┄┈┈┈『🄼🄰🄸🄽』┈┈┈┈┈┉┓
-┆➜ .afk [alasan]
-┆➜ .jadian (Limit)
-┆➜ .menu
-┆➜ .help
-┆➜ .?
-┆➜ .runtime
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+menu =`
 
-┏┉┄┈┈┈『🄶🄰🄼🄴』┈┈┈┈┈┉┓
-┆➜ .asahotak
-┆➜ .caklontong
-┆➜ .family100
-┆➜ .math <mode>
-┆➜ .siapakahaku
-┆➜ .tebakgambar
-┆➜ .tebakkata
-┆➜ .tebakkimia
-┆➜ .tebaklagu (Limit)
-┆➜ .tictactoe [custom room name]
-┆➜ .ttt [custom room name]
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-┏┉┄┈┈┈『🄴🅇🄿 & 🄻🄸🄼🄸🅃』┈┈┈┈┈┉┓
-┆➜ .buy<jumlah limit>
-┆➜ .buy <jumlah limit>
-┆➜ .buyall
-┆➜ .daily
-┆➜ .claim
-┆➜ .leaderboard [jumlah user]
-┆➜ .lb [jumlah user]
-┆➜ .levelup
-┆➜ .limit [@user]
-┆➜ .pay @user <amount>
-┆➜ .paylimit @user <amount>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🅂🅃🄸🄲🄺🄴🅁』┈┈┈┈┈┉┓
-┆➜ .attp <teks>
-┆➜ .attp2 <teks> (Limit)
-┆➜ .ctrigger <text> (Limit)
-┆➜ .getexif
-┆➜ .semoji [tipe] <emoji>
-┆➜ .stiker (caption|reply media)
-┆➜ .stiker <url>
-┆➜ .stikergif (caption|reply media)
-┆➜ .stikergif <url>
-┆➜ .stikerline <url> (Limit)
-┆➜ .stikertelegram <url> (Limit)
-┆➜ .stikerly <pencarian> (Limit)
-┆➜ .stickfilter (caption|reply media) (Limit)
-┆➜ .stickmaker (caption|reply media) (Limit)
-┆➜ .togif (reply)
-┆➜ .toimg (reply)
-┆➜ .toimg2 (reply)
-┆➜ .tovideo (reply)
-┆➜ .ttp <teks>
-┆➜ .ttp2 <teks> (Limit)
-┆➜ .ttpdark <teks> (Limit)
-┆➜ .wm <packname>|<author>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄺🄴🅁🄰🄽🄶 🄰🄹🄰🄸🄱』┈┈┈┈┈┉┓
-┆➜ apakah <teks>?
-┆➜ .apakah <pertanyaan>
-┆➜ .artinama [nama]
-┆➜ kapan <text>?
-┆➜ kapankah <text>?
-┆➜ .kapan <pertanyaan>
-┆➜ .kapankah <pertanyaan>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🅀🅄🄾🅃🄴🅂』┈┈┈┈┈┉┓
-┆➜ .bucin
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄰🄳🄼🄸🄽』┈┈┈┈┈┉┓
-┆➜ .add nomor,nomor (Limit)
-┆➜ .+ nomor,nomor (Limit)
-┆➜ .demote @user
-┆➜ .member @user
-┆➜ .↓ @user
-┆➜ .kick @user (Limit)
-┆➜ .- @user (Limit)
-┆➜ .demote @user
-┆➜ .member @user
-┆➜ .↓ @user
-┆➜ .promote @user
-┆➜ .admin @user
-┆➜ .^ @user
-┆➜ .↑ @user
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄶🅁🄾🅄🄿』┈┈┈┈┈┉┓
-┆➜ .group open / close
-┆➜ .enable <option>
-┆➜ .disable <option>
-┆➜ .getsider
-┆➜ .infogrup
-┆➜ .leavegc
-┆➜ .leavegcall
-┆➜ .leavegroup
-┆➜ .linkgroup
-┆➜ .here
-┆➜ .listonline
-┆➜ .opengumuman [teks]
-┆➜ .oannounce [teks]
-┆➜ .ohidetag [teks]
-┆➜ .pengumuman [teks]
-┆➜ .announce [teks]
-┆➜ .hidetag [teks]
-┆➜ .revoke
-┆➜ .setpp
-┆➜ .setbye <teks>
-┆➜ .setwelcome <teks>
-┆➜ .simulate <event> [@mention]
-┆➜ .totalpesan
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄿🅁🄴🄼🄸🅄🄼』┈┈┈┈┈┉┓
-┆➜ .join [chat.whatsapp.com]
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄸🄽🅃🄴🅁🄽🄴🅃』┈┈┈┈┈┉┓
-┆➜ .alkitab <pencarian>
-┆➜ .anime <judul>
-┆➜ .brainly <soal>
-┆➜ .character <nama>
-┆➜ .covid <negara>
-┆➜ .darkjokes
-┆➜ .fetch <url>
-┆➜ .get <url>
-┆➜ .gimage <query>
-┆➜ .image <query>
-┆➜ .google <pencarian>
-┆➜ .googlef <pencarian>
-┆➜ .epep <id>
-┆➜ .katabijak <opsi>
-┆➜ .kbbi <teks>
-┆➜ .Layarkaca <query>
-┆➜ .lolis
-┆➜ .lirik <Apa>
-┆➜ .manga <judul>
-┆➜ .resep <makanan>
-┆➜ .masak <makanan>
-┆➜ .meme
-┆➜ pikachu
-┆➜ .pinterest <keyword>
-┆➜ .ppcouple
-┆➜ .ppcp
-┆➜ .spotify <query>
-┆➜ .ss <url>
-┆➜ .ssf <url>
-┆➜ .subreddit <query>
-┆➜ .trendtwit
-┆➜ .trendingtwitter
-┆➜ .unsplash <keyword>
-┆➜ .wallpaperq <query> (Limit)
-┆➜ .wikipedia <apa>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄰🄽🄾🄽🅈🄼🄾🅄🅂 🄲🄷🄰🅃』┈┈┈┈┈┉┓
-┆➜ .start,leave,next
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄼🄰🄶🄴🅁 🄽🅄🄻🄸🅂 & 🄻🄾🄶🄾』┈┈┈┈┈┉┓
-┆➜ .tahta <teks> (Limit)
-┆➜ .magernulis1 <teks> (Limit)
-┆➜ .magernulis2 <teks> (Limit)
-┆➜ .magernulis3 <teks> (Limit)
-┆➜ .magernulis4 <teks> (Limit)
-┆➜ .magernulis5 <teks> (Limit)
-┆➜ .magernulis6 <teks> (Limit)
-┆➜ .nulis <teks>
-┆➜ .quotemaker <teks>|<wm> (Limit)
-┆➜ .quotemaker2 <teks | wm> (Limit)
-┆➜ .tahta2<teks>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄳🄾🅆🄽🄻🄾🄰🄳🄴🅁』┈┈┈┈┈┉┓
-┆➜ .fb <url>
-┆➜ .ig <url> (Limit)
-┆➜ .ighighlight <username>
-┆➜ .igstalk <username>
-┆➜ .igstory <username>
-┆➜ .mediafire <url> (Limit)
-┆➜ .play <pencarian> (Limit)
-┆➜ .play2 <pencarian> (Limit)
-
-┆➜ .tiktok <url> (Limit)
-┆➜ .twitter <url> (Limit)
-┆➜ .ytmp3 <url> [server: id4, en60, en61, en68] (Limit)
-┆➜ .yta <url> [server: id4, en60, en61, en68] (Limit)
-┆➜ .ytmp4 <url> [server: id4, en60, en61, en68] (Limit)
-┆➜ .ytv <url> [server: id4, en60, en61, en68] (Limit)
-┆➜ .yt <url> [server: id4, en60, en61, en68] (Limit)
-┆➜ .zippydl <url> (Limit)
-┆➜ .zippyshare <url> (Limit)
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🅃🄾🄾🄻🅂』┈┈┈┈┈┉┓
-┆➜ .aksara <opsi> <teks> (Limit)
-┆➜ .base64
-┆➜ .calc <expression>
-┆➜ .call <nomor>
-┆➜ .carigrup <pencarian>
-┆➜ .caripesan <pesan>|<jumlah>
-┆➜ .hd (caption|reply media)
-┆➜ .enhance (caption|reply media)
-┆➜ .enphoto <effect> <text>|[text2]|[text3]
-┆➜ .gimage <query>
-┆➜ .image <query>
-┆➜ .githubsearch <pencarian>
-┆➜ .hadis
-┆➜ .halah <teks>
-┆➜ .hilih <teks>
-┆➜ .huluh <teks>
-┆➜ .heleh <teks>
-┆➜ .holoh <teks>
-┆➜ .tobraille
-┆➜ .inspect <chat.whatsapp.com>
-┆➜ .kodepos <kota> (Limit)
-┆➜ .memeg<apa|apa>
-┆➜ .mention <teks>
-┆➜ .nulis2 <teks>
-┆➜ .profile [@user]
-┆➜ .qr <teks>
-┆➜ .qrcode <teks>
-┆➜ .readmore <teks>|<teks>
-┆➜ .spoiler <teks>|<teks>
-┆➜ .readviewonce
-┆➜ .run (Limit)
-┆➜ .sauce <caption/reply image>
-┆➜ .scan [nomor]
-┆➜ .ping
-┆➜ .speed
-┆➜ .style <text>
-┆➜ .textpro <effect> <text>|[text2]
-┆➜ .translate <lang> <teks>
-┆➜ .tts <lang> <teks>
-┆➜ .upload (caption|reply media)
-┆➜ .wait
-┆➜ .whatmusic <caption/reply>
-┆➜ .yts <pencarian>
-┆➜ .ytsearch <pencarian>
-┆➜ .zodiac 2002 02 25
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄵🅄🄽』┈┈┈┈┈┉┓
-┆➜ .dare
-┆➜ .Namaninja <teks>
-┆➜ .Purba <teks>
-┆➜ .hug
-┆➜ .pat
-┆➜ .wink
-┆➜ .jodoh <nama>|<nama doi> (Limit)
-┆➜ .ref
-┆➜ .simi <teks>
-┆➜ .simsimi <teks>
-┆➜ .simih <teks>
-┆➜ .truth
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄳🄰🅃🄰🄱🄰🅂🄴』┈┈┈┈┈┉┓
-┆➜ .addvn <text>
-┆➜ .addmsg <text>
-┆➜ .addvideo <text>
-┆➜ .addgif <text>
-┆➜ .addaudio <text>
-┆➜ .addimg <text>
-┆➜ .addsticker <text>
-┆➜ .delcmd <text>
-┆➜ .delvn <text>
-┆➜ .delmsg <text>
-┆➜ .delvideo <text>
-┆➜ .delgif <text>
-┆➜ .delaudio <text>
-┆➜ .delimg <text>
-┆➜ .delsticker <text>
-┆➜ .getvn <text>
-┆➜ .getmsg <text>
-┆➜ .getvideo <text>
-┆➜ .getgif <text>
-┆➜ .getaudio <text>
-┆➜ .getimg <text>
-┆➜ .getsticker <text>
-┆➜ .infocmd <text>
-┆➜ .listcmd <text>
-┆➜ .listvn
-┆➜ .listmsg
-┆➜ .listvideo
-┆➜ .listgif
-┆➜ .listaudio
-┆➜ .listimg
-┆➜ .liststicker
-┆➜ .unlockcmd
-┆➜ .lockcmd
-┆➜ .setcmd <text>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🅅🄾🅃🄸🄽🄶』┈┈┈┈┈┉┓
-┆➜ .cekvote
-┆➜ .hapusvote
-┆➜ .mulaivote [alasan] (Limit)
-┆➜ .upvote
-┆➜ .devote
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄰🄱🅂🄴🄽』┈┈┈┈┈┉┓
-┆➜ .absen
-┆➜ .cekabsen
-┆➜ .hapusabsen
-┆➜ .mulaiabsen [teks]
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄰🄻 🅀🅄🅁 🄰🄽』┈┈┈┈┈┉┓
-┆➜ .alquran 114 1
-┆➜ .asmaulhusna [nomor]
-┆➜ .hadis
-┆➜ .salat <daerah>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ┏┉┄┈┈┈『🄹🄰🄳🄸 🄱🄾🅃』┈┈┈┈┈┉┓
 ┆➜ .getcode
@@ -1422,7 +1094,7 @@ menu =`┏┉┄┈┈┈『🄼🄰🄸🄽』┈┈┈┈┈┉┓
 ┆➜ .listjadibot
 ┆➜ .berhenti
 ┆➜ .stop
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ┏┉┄┈┈┈『🄾🅆🄽🄴🅁』┈┈┈┈┈┉┓
 ┆➜ .whitelist nomor,nomor
@@ -1472,7 +1144,7 @@ menu =`┏┉┄┈┈┈『🄼🄰🄸🄽』┈┈┈┈┈┉┓
 ┆➜ .ban
 ┆➜ .upsw [text] (Reply Media)
 ┆➜ .upsw <text>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ┏┉┄┈┈┈『🄷🄾🅂🅃』┈┈┈┈┈┉┓
 ┆➜ .broadcastjadibot <teks>
@@ -1480,13 +1152,12 @@ menu =`┏┉┄┈┈┈『🄼🄰🄸🄽』┈┈┈┈┈┉┓
 ┆➜ .debounce
 ┆➜ .update
 ┆➜ .update2
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 ┏┉┄┈┈┈『🄰🄳🅅🄰🄽🄲🄴』┈┈┈┈┈┉┓
 ┆➜ >
 ┆➜ =>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┏┉┄┈┈┈『🄸🄽🄵🄾』┈┈┈┈┈┉┓
 ┆➜ .bannedlist
 ┆➜ .owner
@@ -1500,58 +1171,7 @@ menu =`┏┉┄┈┈┈『🄼🄰🄸🄽』┈┈┈┈┈┉┓
 ┆➜ .report <laporan>
 ┆➜ .ping
 ┆➜ .speed
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『🄽🄾 🄲🄰🅃🄴🄶🄾🅁🅈』┈┈┈┈┈┉┓
-┆➜ .save @mention <ContactName>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『anime』┈┈┈┈┈┉┓
-┆➜ .cosplay
-┆➜ .ero
-┆➜ .hentai (Limit)
-┆➜ .husbu
-┆➜ .incest
-┆➜ .megumin
-┆➜ .milf
-┆➜ .neko
-┆➜ .nekos
-┆➜ .nsfw neko
-┆➜ .uniform
-┆➜ .waifu
-┆➜ .wallpaperanime (Limit)
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『maker』┈┈┈┈┈┉┓
-┆➜ .gay
-┆➜ .hornycard
-┆➜ .hornylicense
-┆➜ .itssostupid
-┆➜ .iss
-┆➜ .stupid
-┆➜ .lolice
-┆➜ .simpcard
-┆➜ .trigger
-┆➜ .ytcomment <comment>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『dewasa』┈┈┈┈┈┉┓
-┆➜ .nhentaipdf <code>
-┆➜ .nhentaisearch (judul)
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『exp』┈┈┈┈┈┉┓
-┆➜ .daftar <nama>.<umur>
-┆➜ .reg <nama>.<umur>
-┆➜ .register <nama>.<umur>
-┆➜ .unreg <SN|SERIAL NUMBER>
-┆➜ .unregister <SN|SERIAL NUMBER>
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
-┏┉┄┈┈┈『videomaker』┈┈┈┈┈┉┓
-┆➜ .shaunthesheep
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┏┉┄┈┈┈『audio』┈┈┈┈┈┉┓
 ┆➜ .tomp3 (reply)
 ┆➜ .tovn (reply)
@@ -1567,7 +1187,193 @@ menu =`┏┉┄┈┈┈『🄼🄰🄸🄽』┈┈┈┈┈┉┓
 ┆➜ .slow [vn]
 ┆➜ .smooth [vn]
 ┆➜ .tupai [vn]
-└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈`
+└┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+╭─❒ DOWNLOAD
+├ .infogempa
+├ .herolist
+├ .herodetail [ hero ]
+├ .google [ search ]
+├ .gimage [ search ]
+├ .wiki [ search ]
+├ .mediafire [ link ]
+├ .ytsearch [ judul ]
+├ .ytmp4 [ link yt ]
+├ .ytmp3 [ link yt ]
+├ .play [ judul lagu ]
+├ .video [ judul video ]
+├ .tinyurl [ link ]
+├ .fetch [ link ]
+├ .igdl [ link ]
+├ .tiktokdl [ link ]
+├ .pinterest [ search ]
+├ .lirik [ judul ]
+├ .tourl [ reply image/video ]
+├ .resepmasakan [ judul ]
+├ .artimimpi [ teks ]
+├ .bilangangka [ angka ]
+├ .kalkulator [ angka ]
+├ .fancytext [ teks ]
+├ .githubstalk [ username ]
+├ .translate [ teks kodebhs ]
+├ .ss [ link ]
+├ .playstore [ search ]
+├ .tiktokaudio [ link ]
+├ .brainly [ search ]
+├ .igstory [ search ]
+├ .igstalk [ link ]
+├ .twitter [ link ]
+├ .twmp3 [ link ]
+├ .linkwa [ search ]
+├ .fb [ link ]
+├ .chara [ search ]
+├ .otaku [ search ]
+├ .komiku [ search ]
+│
+├─❒ MAKER
+├ .foliokanan [ text ]
+├ .foliokiri [ text ]
+├ .nuliskanan [ text ]
+├ .nuliskiri [ text ]
+├ .maker [ text ]
+├ .maker2 [ text ]
+├ .maker3 [ text ]
+├ .maker4 [ text ]
+├ .maker2d2 [ text ]
+├ .maker2d3 [ text ]
+├ .maker2d4 [ text ]
+├ .maker3d [ text ]
+├ .maker3d2 [ text ]
+├ .maker3d3 [ text ]
+├ .maker3d4 [ text ]
+├ .transformer [ text ]
+├ .googletxt [ text ]
+├ .battlefield [ text ]
+├ .coffeecup [ text ]
+├ .coffeecup2 [ text ]
+├ .neon [ text ]
+├ .glow [ text ]
+├ .summer [ text ]
+├ .flower [ text ]
+├ .burn [ text ]
+├ .quote [ text ]
+├ .wooden [ text ]
+├ .golden [ text ]
+├ .passed [ reply gambar ]
+├ .gay [ reply gambar ]
+├ .glass [ reply gambar ]
+├ .sampah [ reply gambar ]
+├ .trigger [ reply gambar ]
+├ .greyscale [ reply gambar ]
+├ .hijau [ reply gambar ]
+├ .biru [ reply gambar ]
+├ .comrade [ reply gambar ]
+├ .jail [ reply gambar ]
+├ .blurple2 [ reply gambar ]
+├ .red [ reply gambar ]
+├ .blurple [ reply gambar ]
+├ .invert [ reply gambar ]
+├ .invert_greyscale [ reply gambar ]
+├ .sepia [ reply gambar ]
+├ .pelangi [ reply gambar ]
+├ .wasted [ reply gambar ]
+├ .matrix [ teks ]
+├ .googletxt [ teks ]
+├ .spiderman [ teks ]
+├ .express [ teks ]
+├ .dance [ teks ]
+├ .blackbird [ teks ]
+├ .halloween [ teks ]
+├ .vampire [ teks ]
+├ .codetxt [ teks ]
+├ .text3d [ teks ]
+├ .warrior [ teks ]
+│
+├──❒ GROUP
+├ .getpict [ @tag ]
+├ .getname [ reply target ]
+├ .getbio [ reply target ]
+├ .promote [ @tag ]
+├ .demote [ @tag ]
+├ .antilink [ on/off ]
+├ .antibug [ on/off ]
+├ . welcome [ on/off ]
+├ .creategrup [ nama|@tag ]
+├ .tictactoe [ @tag ]
+├ .delttt
+├ .getpp
+├ .kick [ @tag ]
+├ .add [ nomor ]
+├ .getdeskgc
+├ .sider [ reply pesan bot ]
+├ .hacked [ teks ]
+├ .setnamegc [ teks ]
+├ .setdeskgc [ teks ]
+├ .fitnah [ @tag|teks1|teks2 ]
+├ .kontak [ @tag|nama ]
+├ .kontag [ @tag|nama ]
+├ .opengc
+├ .closegc
+├ .resetlinkgc
+├ .linkgrup
+├ .hidetag [ teks ]
+├ .sticktag [ nama sticker ]
+├ .totag [ reply media ]
+│
+├─❒ TOOLS
+├ .sticker
+├ .stickerwm [ nama|author ]
+├ .takestick [ nama|author ]
+├ .colong [ reply sticker ]
+├ .dadu
+├ .semoji [ emoji ]
+├ .attp [ teks ]
+├ .toimg
+│
+├─❒ ASUPAN
+├ .asupan
+├ .asupan2
+├ .asupant3
+├ .cecan
+├ .santuy
+├ .hijaber
+├ .ukty
+├ .bocil
+├ .ghea
+│
+├─❒ STORAGE
+├ .listimage
+├ .liststicker
+├ .listvn
+├ .addsticker [ nama ]
+├ .delsticker [ nama ]
+├ .addvn [ nama ]
+├ .delvn [ nama ]
+├ .addimage [ nama ]
+├ .delimage [ nama ]
+│
+├─❒ OTHER / FUN
+├ .rate
+├ .kapankah
+├ .apakah
+├ .bisakah
+├ .caripesan [ teks|jumlah ]
+├ .slots
+├ .suit [ gunting/batu/kertas ]
+├ .tag [ nomor ]
+├ .tagme
+├ .tts [ kodebhs teks ]
+├ .readmore [ teks1|teks2 ]
+├ .fitnahpc [ nomor|teks1|teks2 ]
+├ .chat [ nomor|teks ]
+├ .fdeface [ replyimg link|teks1|teks2 ]
+├ .listgrup
+├ .baileys [ reply message ]
+├ .q [ reply message ]
+├ .getcaption [ reply message ]
+├ .pantun
+├ .tospam [ reply audio/sticker/image|jumlah ]
+├ .sharelock [ teks1|teks2 ]
+└─────────────────❒`
 gbutsan = [
 {buttonId:`owner`,buttonText:{displayText:'👑 OWNER'},type:1},
 {buttonId:`donasi`,buttonText:{displayText:'🔖SEWA BOT'},type:1}
@@ -2238,7 +2044,7 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const jancok = `╭─❒ 「 Verification 」 ❒
-├ *🔖 Nama :* ${pushname}
+├ *📁 Nama :* ${pushname}
 ├ *🔖 Nomor :* @${sender.split('@')[0]}
 ├ *🔖 Seri:* ${serialUser}
 ├ *🔖 Pengguna:* ${_registered.length}
@@ -3665,7 +3471,7 @@ await denz.sendMessage(from, btnskuy, MessageType.buttonsMessage, {quoted: ftrol
 case 'donasi':
 dona = fs.readFileSync('./media/donasi.jpg')
 doni =`*╭─❒ 「 Sewa Bot」 ──────*
-*│*⬡ *1 BULAN : 5K
+*│*⬡ *1 BULAN : 5K*
 *│*⬡ *PERMANENT : 10K*
 *│*⬡ *PAYMENT     : GOPAY ONLY*
 *│*⬡ *HUB    : wa.me/6282147244748*
