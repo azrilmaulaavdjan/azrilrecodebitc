@@ -92,19 +92,18 @@ exec(`cd /sdcard/download && play *mp3`)
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			masuk =`┌✧ :･ﾟ _Welcome To Group_ 
-│◦➛  ${mdata.subject}
-│       ─────────
-├◦⎙ _User_ : @${num.split('@')[0]}
-├◦⎘ _Time_ : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}
-└────────────────﻿✦
-☏ Owner: http://wa.me/6282147244748
-    ╰┈➤ *minat sewa bot. cht no diatas*`
+			masuk =`☏ Owner: http://wa.me/6282147244748
+    ╰┈➤ *minat sewa cht no diatas*`
 			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'Welcome New Member'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,
-footerText: `ketik .menu untuk memulai bot`, 
+footerText: `┌✧ :･ﾟ _Welcome To Group_ 
+│◦➛  ${mdata.subject}
+│      ─────────
+├◦⎙ _User_ : @${num.split('@')[0]}
+├◦⎘ _Time_ : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}
+└────────────────﻿✦`, 
 buttons: gbutsan,
 headerType: 4 }
 			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./denz.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
