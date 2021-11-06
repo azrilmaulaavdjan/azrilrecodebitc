@@ -353,30 +353,30 @@ try {
 			var ase = new Date();
                         var jamss = ase.getHours();
                          switch(jamss){
-                case 0: jamss = "Midnight 🌚"; break;
-                case 1: jamss = "Midnight 🌚"; break;
-                case 2: jamss = "Midnight 🌚"; break;
-                case 3: jamss = "Midnight 🌔"; break;
-                case 4: jamss = "Midnight 🌔"; break;
-                case 5: jamss = "Dawn 🌄"; break;
-                case 6: jamss = "Morning 🌄"; break;
-                case 7: jamss = "Morning 🌄"; break;
-                case 8: jamss = "Morning ☀️"; break;
-                case 9: jamss = "Morning ☀️"; break;
-                case 10: jamss = "Morning ☀️"; break;
-                case 11: jamss = "Afternoon 🌞"; break;
-                case 12: jamss = "Zuhur 🌞"; break;
-                case 13: jamss = "Afternoon 🌞"; break;
-                case 14: jamss = "Afternoon 🌞"; break;
-                case 15: jamss = "Asr 🌞"; break;
-                case 16: jamss = "Afternoon ☀️"; break;
-                case 17: jamss = "Evening 🌄"; break;
-                case 18: jamss = "Maghrib 🌄"; break;
-                case 19: jamss = "Isha 🌙"; break;
-                case 20: jamss = "Night 🌙"; break;
-                case 21: jamss = "Night 🌙"; break;
-                case 22: jamss = "Midnight 🌙"; break;
-                case 23: jamss = "Midnight 🌚"; break;
+                case 0: jamss = "🌚 Hi"; break;
+                case 1: jamss = "🌚 Hi"; break;
+                case 2: jamss = "🌚 Hi"; break;
+                case 3: jamss = "🌔 Hi"; break;
+                case 4: jamss = "🌔 Hi"; break;
+                case 5: jamss = "🌄 Hi"; break;
+                case 6: jamss = "🌄 Hi"; break;
+                case 7: jamss = "🌄 Hi"; break;
+                case 8: jamss = "☀️ Hi"; break;
+                case 9: jamss = "☀️ Hi"; break;
+                case 10: jamss = "☀️ Hi"; break;
+                case 11: jamss = "🌞 Hi"; break;
+                case 12: jamss = "🌞 Hi"; break;
+                case 13: jamss = "🌞 Hi"; break;
+                case 14: jamss = "🌞 Hi"; break;
+                case 15: jamss = "🗿 Hi"; break;
+                case 16: jamss = "☀️ Hi"; break;
+                case 17: jamss = "🌄 Hi"; break;
+                case 18: jamss = "🌄 Hi"; break;
+                case 19: jamss = "🌙 Hi"; break;
+                case 20: jamss = "🌙 Hi"; break;
+                case 21: jamss = "🌙 Hallo"; break;
+                case 22: jamss = "🌙 Hallo"; break;
+                case 23: jamss = "Hallo 🌚"; break;
             }
             var tampilUcapan = "" + jamss;
             const jmn = moment.tz('Asia/Jakarta').format('HH:mm:ss')
@@ -1391,10 +1391,10 @@ denz.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text:
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-"title": `hallo ${pushname}` ,
+"title": `Azril Ofc` ,
 "body": `${jmn} - ${week} ${weton} - ${calender}`,
 "mediaType": "2",
-"mediaUrl": "https://youtu.be/wy0sLoq6EmM",
+"mediaUrl": "https://youtu.be/MdegdoqwhUY",
 "thumbnail": pporigi,
 },mentionedJid:[stod]}, quoted : ftrol})
 }
